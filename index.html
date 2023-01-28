@@ -15,10 +15,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
 
     <title>NuCamp: A Better Way To Camp</title>
+
 </head>
 
 <body>
 
+    <!-- Jumbotron -->
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
@@ -29,20 +31,24 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+
+                <!-- Reserve Cmpsite Button -->
                 <div class="col-md-4 col-xl-2 mt-4">
-                    <button type="button" class="btn btn-primary btn-info btn-lg text-nowrap" data-toggle="modal" data-target="#reserveModal">Reserve Campsite</button>
+                    <button type="button" class="btn btn-primary btn-info btn-lg text-nowrap" id="reserveButton">Reserve Campsite</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <div id="reserveModal" class="modal fade" role="dialog"> <!-- Reservation modal -->
+    <!-- Reservation modal -->
+    <div id="reserveModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header bg-info text-white">
+                <div class="modal-header">
                     <h3 class="modal-title">Reserve a Campsite</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
+
                 <div class="modal-body">
                     <div class="modal-fluid">
                         <form>
@@ -90,6 +96,7 @@
         </div>
     </div>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>
@@ -104,7 +111,7 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
                 </ul>
                 <span class="navbar-text ml-auto">
-                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                    <a role="button" id="loginButton">
                         <i class="fa fa-sign-in"></i> Login
                     </a>
                 </span>
@@ -112,6 +119,7 @@
         </div>
     </nav>
 
+    <!-- Login modal -->
     <div id="loginModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -149,6 +157,7 @@
         </div>
     </div>
 
+    <!-- Carousel -->
     <div class="container">
         <div class="row row-content">
             <div class="col-md-8 mx-auto">
@@ -189,6 +198,7 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <!-- Play/Pause Button -->
                     <button class="btn btn-danger btn-sm" id="carouselButton">
                         <i class="fa fa-pause"></i>
                     </button>
@@ -196,6 +206,7 @@
             </div>
         </div>
 
+        <!-- Discover & Review - Section 1 -->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Discover & Review</h2>
@@ -212,6 +223,7 @@
             </div>
         </div>
 
+        <!-- Featured Campsites - Section 2 -->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
@@ -227,6 +239,7 @@
             </div>
         </div>
 
+        <!-- Our Community Partners - Section 3 -->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
@@ -242,6 +255,7 @@
             </div>
         </div>
 
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -255,6 +269,7 @@
                     </ul>
                 </div>
 
+                <!-- Social Media Links -->
                 <div class="col-6 col-sm-5 text-center">
                     <h5>Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
